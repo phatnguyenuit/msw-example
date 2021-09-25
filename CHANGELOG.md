@@ -1,3 +1,5 @@
+## [0.2.10](https://github.com/phatnguyenuit/msw-example/compare/0.2.9...0.2.10) (2021-09-25)
+
 ## [0.2.9](https://github.com/phatnguyenuit/msw-example/compare/0.2.8...0.2.9) (2021-09-25)
 
 
