@@ -1,3 +1,10 @@
+## [0.2.6](https://github.com/phatnguyenuit/msw-example/compare/0.2.5...0.2.6) (2021-09-25)
+
+
+### Bug Fixes
+
+* fix workder url ([da43a2a](https://github.com/phatnguyenuit/msw-example/commit/da43a2a4e0d041a251652c1b128a97745a229b2b))
+
 ## [0.2.5](https://github.com/phatnguyenuit/msw-example/compare/0.2.4...0.2.5) (2021-09-25)
 
 
