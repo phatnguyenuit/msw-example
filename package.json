@@ -92,7 +92,8 @@
       "!**/node_modules/**",
       "!**/coverage/**",
       "!**/mocks/**",
-      "!src/index.tsx"
+      "!src/index.tsx",
+      "!src/reportWebVitals.ts"
     ],
     "coverageThreshold": {
       "global": {
