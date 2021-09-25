@@ -61,3 +61,4 @@ jobs:
       DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
       REPOSITORY: ${{ github.repository }}
       REACT_APP_USE_MOCK: 'true'
+      PUBLIC_URL: '.'
