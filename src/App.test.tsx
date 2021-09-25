@@ -9,18 +9,6 @@ import {
 import App from './App';
 
 describe('App', () => {
-  beforeAll(() => {
-    mswServer.listen();
-  });
-
-  afterAll(() => {
-    mswServer.close();
-  });
-
-  afterEach(() => {
-    mswServer.resetHandlers();
-  });
-
   it('should render github corner', () => {
     render(<App />);
     const githubCorner = screen.getByLabelText(
