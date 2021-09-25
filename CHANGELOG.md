@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/phatnguyenuit/msw-example/compare/0.2.10...0.3.0) (2021-09-25)
+
+
+### Features
+
+* add GitHub corner ([c3c1ea3](https://github.com/phatnguyenuit/msw-example/commit/c3c1ea3cf7a5a1af8a006e1527b8fc481b3e7096))
+
 ## [0.2.10](https://github.com/phatnguyenuit/msw-example/compare/0.2.9...0.2.10) (2021-09-25)
 
 ## [0.2.9](https://github.com/phatnguyenuit/msw-example/compare/0.2.8...0.2.9) (2021-09-25)
