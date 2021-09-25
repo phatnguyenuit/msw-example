@@ -1,5 +1,5 @@
-import * as userHandlers from './user';
+import { login, getUserSuccess } from './user';
 
-const handlers = [...Object.values(userHandlers)];
+const handlers = [login, getUserSuccess];
 
 export default handlers;

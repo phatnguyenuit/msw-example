@@ -1,15 +1,19 @@
 import { rest } from 'msw';
 
 export const login = rest.post('/login', (req, res, ctx) => {
-  return res(ctx.status(200));
+  return res(ctx.status(200), ctx.delay());
 });
 
 export const getUserSuccess = rest.get('/user', (req, res, ctx) => {
   return res(
     ctx.status(200),
     ctx.json({
-      username: 'admin',
+      message: 'Request success',
+      data: {
+        username: 'admin',
+      },
     }),
+    ctx.delay(),
   );
 });
 
@@ -19,6 +23,7 @@ export const getUserFailed = rest.get('/user', (req, res, ctx) => {
     ctx.json({
       message: 'Not authorized',
     }),
+    ctx.delay(),
   );
 });
 

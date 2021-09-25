@@ -21,11 +21,17 @@ describe('App', () => {
     mswServer.resetHandlers();
   });
 
-  it('renders learn react link', () => {
+  it('should render github corner', () => {
     render(<App />);
-    const linkElement = screen.getByText(/learn react/i);
+    const githubCorner = screen.getByLabelText(
+      'Navigate to my GitHub repository',
+    );
 
-    expect(linkElement).toBeInTheDocument();
+    expect(githubCorner).toBeVisible();
+    expect(githubCorner).toHaveAttribute(
+      'href',
+      'https://github.com/phatnguyenuit/msw-example',
+    );
   });
 
   it('should get user success', async () => {
@@ -36,8 +42,11 @@ describe('App', () => {
       userEvent.click(screen.getByTestId('fetchUserBtn'));
     });
 
+    expect(screen.queryByTestId('loading')).toBeVisible();
+
     await waitFor(() => {
-      expect(screen.getByTestId('response')).toHaveTextContent(/admin/i);
+      expect(screen.queryByTestId('response')).toHaveTextContent(/admin/i);
+      expect(screen.queryByTestId('loading')).not.toBeInTheDocument();
     });
   });
 
@@ -49,10 +58,13 @@ describe('App', () => {
       userEvent.click(screen.getByTestId('fetchUserBtn'));
     });
 
+    expect(screen.queryByTestId('loading')).toBeVisible();
+
     await waitFor(() => {
-      expect(screen.getByTestId('response')).toHaveTextContent(
+      expect(screen.queryByTestId('response')).toHaveTextContent(
         /not authorized/i,
       );
+      expect(screen.queryByTestId('loading')).not.toBeInTheDocument();
     });
   });
 
@@ -64,10 +76,13 @@ describe('App', () => {
       userEvent.click(screen.getByTestId('fetchUserBtn'));
     });
 
+    expect(screen.queryByTestId('loading')).toBeVisible();
+
     await waitFor(() => {
-      expect(screen.getByTestId('response')).toHaveTextContent(
+      expect(screen.queryByTestId('response')).toHaveTextContent(
         /network error/i,
       );
+      expect(screen.queryByTestId('loading')).not.toBeInTheDocument();
     });
   });
 });
