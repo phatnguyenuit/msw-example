@@ -56,7 +56,7 @@ function App() {
         </button>
         <div>
           {isLoading && <p data-testid="loading">Loading...</p>}
-          {response && (
+          {!isLoading && (
             <code data-testid="response">
               {JSON.stringify(response, null, 2)}
             </code>
