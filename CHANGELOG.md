@@ -1,3 +1,10 @@
+## [0.2.9](https://github.com/phatnguyenuit/msw-example/compare/0.2.8...0.2.9) (2021-09-25)
+
+
+### Bug Fixes
+
+* fix local url ([ec74939](https://github.com/phatnguyenuit/msw-example/commit/ec74939f2b7a72c9ac3d37025641f356741597e2))
+
 ## [0.2.8](https://github.com/phatnguyenuit/msw-example/compare/0.2.7...0.2.8) (2021-09-25)
 
 ## [0.2.7](https://github.com/phatnguyenuit/msw-example/compare/0.2.6...0.2.7) (2021-09-25)
