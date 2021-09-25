@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import pkg from '../package.json';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 function prepareMocks() {
   if (process.env.REACT_APP_USE_MOCK === 'true') {
-    const prefix = process.env.NODE_ENV === 'production' ? pkg.homepage : './';
-
     return import('./mocks/browser').then(({ mswWorker }) =>
       mswWorker.start({
         serviceWorker: {
-          url: `${prefix}mockServiceWorker.js`,
+          url: './mockServiceWorker.js',
         },
+        findWorker: (scriptURL, _mockServiceWorkerUrl) =>
+          scriptURL.includes('mockServiceWorker'),
         onUnhandledRequest: 'bypass',
       }),
     );
