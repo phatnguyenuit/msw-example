@@ -1,3 +1,10 @@
+## [0.2.5](https://github.com/phatnguyenuit/msw-example/compare/0.2.4...0.2.5) (2021-09-25)
+
+
+### Bug Fixes
+
+* fix msw worker url ([54df1dc](https://github.com/phatnguyenuit/msw-example/commit/54df1dc644d3c761eeddd9c743c50128e5346a9b))
+
 ## [0.2.4](https://github.com/phatnguyenuit/msw-example/compare/0.2.3...0.2.4) (2021-09-25)
 
 ## [0.2.3](https://github.com/phatnguyenuit/msw-example/compare/0.2.2...0.2.3) (2021-09-25)
