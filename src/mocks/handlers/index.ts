@@ -1,5 +1,5 @@
 import * as userHandlers from './user';
 
-const handlers = [userHandlers.getUserError];
+const handlers = [...Object.values(userHandlers)];
 
 export default handlers;
