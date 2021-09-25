@@ -2,6 +2,14 @@
   "name": "msw-example",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "react",
+    "msw",
+    "mock",
+    "service",
+    "worker",
+    "example"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,6 +18,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "axios": "^0.21.4",
+    "msw": "^0.35.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -51,6 +61,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@release-it/conventional-changelog": "^2.0.0",
+    "@testing-library/react-hooks": "^7.0.2",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "3.3.0",
     "eslint-config-prettier": "^6.15.0",
@@ -80,7 +91,8 @@
       "**/*.{ts,tsx}",
       "!**/node_modules/**",
       "!**/coverage/**",
-      "!src/serviceWorker.ts"
+      "!**/mocks/**",
+      "!src/index.tsx"
     ],
     "coverageThreshold": {
       "global": {
@@ -95,5 +107,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
