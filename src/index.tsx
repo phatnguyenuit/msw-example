@@ -8,6 +8,9 @@ function prepareMocks() {
   if (process.env.REACT_APP_USE_MOCK === 'true') {
     return import('./mocks/browser').then(({ mswWorker }) =>
       mswWorker.start({
+        serviceWorker: {
+          url: './mockServiceWorker.js',
+        },
         onUnhandledRequest: 'bypass',
       }),
     );
