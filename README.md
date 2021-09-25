@@ -1,31 +1,10 @@
-# Getting Started with Create React App
+# MSW Example
 
-![CI/CD](https://github.com/:user/:repository/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/:user/:repository/branch/master/graph/badge.svg?token=:TOKEN)](https://codecov.io/gh/:user/:repository)
-![License](https://img.shields.io/github/license/:user/:repository)
+![CI/CD](https://github.com/phatnguyenuit/msw-example/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/phatnguyenuit/msw-example/branch/master/graph/badge.svg?token=oCoTGnFfgh)](https://codecov.io/gh/phatnguyenuit/msw-example)
+![License](https://img.shields.io/github/license/phatnguyenuit/msw-example)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Features
-
-- Inherit from package [`cra-template-typescript`](https://www.npmjs.com/package/cra-template-typescript)
-- Configure `eslint` with `prettier`
-- Configure [`husky`](https://typicode.github.io/husky/#/)
-- Configure [`lint-staged`](https://github.com/okonet/lint-staged#readme)
-- Configure [`prettier`](https://prettier.io/)
-- Configure [`commitlint`](https://commitlint.js.org/)
-- Configure [`release-it`](https://github.com/release-it/release-it)
-- Add default `jest` test coverage options
-- Configure sample GitHub actions including test, release and deploy
-- Provide sample vscode snippets
-
-## Configure
-
-- Update [`README`](./README.md)
-  - Replace `:user` and `:repository` by your own.
-  - Navigate to [Codecov](https://codecov.io) login and get `Repository Upload Token` for your repository.
-  - Replace `:TOKEN` with your markdown Codecov badge.
-- Add repository secrets `DEPLOY_ACCESS_TOKEN` generated from `https://github.com/settings/tokens/new` with the first four checked options of `repo`.
 
 ## Available Scripts
 
