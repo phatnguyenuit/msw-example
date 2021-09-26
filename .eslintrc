@@ -10,6 +10,7 @@
   ],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
-    "no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "no-unused-expressions": "error"
   }
 }

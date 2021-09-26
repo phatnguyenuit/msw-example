@@ -16,7 +16,7 @@ const MockSelect: React.FC<MockSelectProps> = ({
   return (
     <div>
       <h2>{name}</h2>
-      {Object.entries(handlers).map(([handlerKey, handler], index) => {
+      {Object.keys(handlers).map((handlerKey) => {
         return (
           <div key={handlerKey}>
             <input
