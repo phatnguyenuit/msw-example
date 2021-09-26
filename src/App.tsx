@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import GitHubCorner from 'react-github-corner';
 
+import MockGUI from 'components/mock-gui';
 import logo from './logo.svg';
 import './App.css';
 
@@ -38,7 +39,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <GitHubCorner
@@ -55,6 +56,7 @@ function App() {
           Fetch user
         </button>
         <div>
+          <MockGUI />
           {isLoading && <p data-testid="loading">Loading...</p>}
           {!isLoading && (
             <code data-testid="response">
